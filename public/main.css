@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Syne";
+  src: url("./fonts/Syne-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fuzzy Bubbles";
+  src: url("./fonts/FuzzyBubbles-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 4%;
+  background: #212320;
+}
+
+header img {
+  max-width: 150px;
+}
+
+header #handburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  outline: none;
+  background: transparent;
+  gap: 6px;
+  padding: 5px 14px;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header #handburger:hover {
+  border-color: #fff;
+}
+
+header #handburger svg {
+  width: 40px;
+  height: 40px;
+  stroke: #fff;
+}
+
+header #handburger span {
+  font-size: 20px;
+  color: #fff;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  min-height: calc(100vh - 200px);
+  -ms-grid-columns: auto 650px;
+      grid-template-columns: auto 650px;
+}
+
+@media screen and (max-width: 980px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main #bg {
+  background: #f3f0f0;
+  padding: 50px 0 50px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #bg img {
+  width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  main #bg {
+    display: none;
+  }
+}
+
+main #formContainer {
+  padding: 45px 6%;
+  max-width: 650px;
+  width: 88%;
+}
+
+main #formContainer h2 {
+  font-family: "Syne", sans-serif;
+  margin: 0;
+  font-size: 30px;
+}
+
+main #formContainer p {
+  margin: 4px 0 20px 0;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+main #formContainer p q {
+  color: green;
+}
+
+main #formContainer form {
+  display: block;
+}
+
+main #formContainer form .full {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  main #formContainer form .full {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
+main #formContainer form .formControl {
+  width: 100%;
+  display: block;
+  margin-bottom: 14px;
+}
+
+main #formContainer form .formControl label {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+main #formContainer form .formControl input,
+main #formContainer form .formControl select,
+main #formContainer form .formControl textarea {
+  width: calc(100% - 28px);
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid #dfdede;
+}
+
+main #formContainer form .formControl input:focus,
+main #formContainer form .formControl select:focus,
+main #formContainer form .formControl textarea:focus {
+  border-color: #b7f8b7;
+}
+
+main #formContainer form .formControl select {
+  width: 100%;
+}
+
+main #formContainer form button {
+  background: #080808;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+  border: none;
+  width: 100%;
+  margin: 20px 0;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main #formContainer form button:hover {
+  background: #303530;
+}
+
+footer {
+  background: #f3f0f0;
+  padding: 0 0 30px 2%;
+  font-size: 15px;
+}
+
+footer a {
+  color: #080808;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+  footer {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
